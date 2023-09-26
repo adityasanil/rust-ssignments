@@ -11,8 +11,8 @@ impl Book {
         author: String,
         is_available: bool,
         borrower_name: String,
-    ) -> Book {
-        Book {
+    ) -> Self { // Self == Book
+        Self {
             title,
             author,
             is_available,

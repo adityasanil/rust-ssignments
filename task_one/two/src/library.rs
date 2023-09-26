@@ -6,7 +6,7 @@ pub struct Library {
 
 impl Library {
     pub fn new() -> Self {
-        Library {
+        Self {
             books: Vec::new()
         }
     }

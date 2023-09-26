@@ -4,8 +4,8 @@ pub struct Person {
 }
 
 impl Person {
-    pub fn person_create(name: String, age: u32) -> Person {
-        Person { name, age }
+    pub fn person_create(name: String, age: u32) -> Self {
+        Self { name, age }
     }
 
     pub fn person_details(&self) {
