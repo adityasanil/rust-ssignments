@@ -7,11 +7,11 @@ use book::Book;
 use library::Library;
 
 fn main() {
-    let p: Person = Person::person_create("Harry".to_string(), 23);
+    let p: Person = Person::new("Harry".to_string(), 23);
     p.person_details();
 
-    let first_book: Book = Book::book_create("Theory of Everything".to_string(), "Stephen Hawking".to_string(), true, "".to_string());
-    let second_book: Book = Book::book_create("The 48 Laws Of Power".to_string(), "Robert Greene".to_string(), true, "".to_string());
+    let first_book: Book = Book::new("Theory of Everything".to_string(), "Stephen Hawking".to_string(), true, "".to_string());
+    let second_book: Book = Book::new("The 48 Laws Of Power".to_string(), "Robert Greene".to_string(), true, "".to_string());
 
     let mut library: Library = Library::new();
     library.add_book(first_book);

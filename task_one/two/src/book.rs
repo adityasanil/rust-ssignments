@@ -6,7 +6,7 @@ pub struct Book {
 }
 
 impl Book {
-    pub fn book_create(
+    pub fn new(
         title: String,
         author: String,
         is_available: bool,
